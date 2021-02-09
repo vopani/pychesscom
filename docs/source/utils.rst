@@ -4,7 +4,7 @@ Utilities
 Response
 --------
 
-.. autoclass:: chesscom.utils.response.Response
+.. autoclass:: pychesscom.utils.response.Response
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +12,7 @@ Response
 Route
 --------
 
-.. autoclass:: chesscom.utils.route.Route
+.. autoclass:: pychesscom.utils.route.Route
    :members:
    :undoc-members:
    :show-inheritance:

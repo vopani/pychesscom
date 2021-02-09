@@ -4,7 +4,7 @@ Endpoints
 Club
 ----
 
-.. autoclass:: chesscom.endpoints.club.Club
+.. autoclass:: pychesscom.endpoints.club.Club
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +12,7 @@ Club
 Country
 -------
 
-.. autoclass:: chesscom.endpoints.country.Country
+.. autoclass:: pychesscom.endpoints.country.Country
    :members:
    :undoc-members:
    :show-inheritance:
@@ -20,7 +20,7 @@ Country
 Leaderboard
 -----------
 
-.. autoclass:: chesscom.endpoints.leaderboard.Leaderboard
+.. autoclass:: pychesscom.endpoints.leaderboard.Leaderboard
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +28,7 @@ Leaderboard
 Match
 -----
 
-.. autoclass:: chesscom.endpoints.match.Match
+.. autoclass:: pychesscom.endpoints.match.Match
    :members:
    :undoc-members:
    :show-inheritance:
@@ -36,7 +36,7 @@ Match
 Player
 ------
 
-.. autoclass:: chesscom.endpoints.player.Player
+.. autoclass:: pychesscom.endpoints.player.Player
    :members:
    :undoc-members:
    :show-inheritance:
@@ -44,7 +44,7 @@ Player
 Puzzle
 ------
 
-.. autoclass:: chesscom.endpoints.puzzle.Puzzle
+.. autoclass:: pychesscom.endpoints.puzzle.Puzzle
    :members:
    :undoc-members:
    :show-inheritance:
@@ -52,7 +52,7 @@ Puzzle
 Streamer
 --------
 
-.. autoclass:: chesscom.endpoints.streamer.Streamer
+.. autoclass:: pychesscom.endpoints.streamer.Streamer
    :members:
    :undoc-members:
    :show-inheritance:
@@ -60,7 +60,7 @@ Streamer
 Tournament
 ----------
 
-.. autoclass:: chesscom.endpoints.tournament.Tournament
+.. autoclass:: pychesscom.endpoints.tournament.Tournament
    :members:
    :undoc-members:
    :show-inheritance:

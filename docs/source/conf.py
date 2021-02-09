@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'chesscom'
+project = 'pychesscom'
 copyright = '2021, Rohan Rao'
 author = 'Rohan Rao'
 
