@@ -3,8 +3,13 @@ import setuptools
 with open('VERSION.txt', 'r') as f:
     version = f.read()
 
-with open('README.md', 'r') as fh:
-    long_description = fh.read()
+with open('README.md', 'r') as f1:
+    long_description1 = f1.read()[:3]
+
+with open('README.md', 'r') as f2:
+    long_description2 = f1.read()[10:]
+
+long_description = ''.join(long_description1 + long_description2)
 
 setuptools.setup(
     name='pychesscom',
