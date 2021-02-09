@@ -29,6 +29,7 @@ setuptools.setup(
     install_requires=[
         'aiohttp'
     ],
+    packages=setuptools.find_packages(),
     license='Apache License, Version 2.0',
     platforms='any',
     classifiers=[
