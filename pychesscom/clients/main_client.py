@@ -10,6 +10,19 @@ from pychesscom.endpoints.tournament import Tournament
 
 
 class ChessComClient:
+    """
+    Class for handling Chess.com API requests.
+
+    :param loop: Asyncio event loop
+    :type loop: :class:`asyncio.AbstractEventLoop`
+
+    Example:
+
+    .. code-block:: python
+
+        from pychesscom import ChessComClient
+        client = ChessComClient()
+    """
     def __init__(self, loop=None) -> None:
         self._client = BaseClient(loop=loop)
         self.club = Club(client=self._client)

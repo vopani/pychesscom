@@ -33,7 +33,7 @@ from pychesscom import ChessComClient
 
 client = ChessComClient()
 response = await client.player.get_details('erik')
-response.to_dict()
+print(response)
 ```
 
 ##### Python Console
@@ -44,7 +44,7 @@ from pychesscom import ChessComClient
 async def main():
 	client = ChessComClient()
 	response = await client.player.get_details('erik')
-	response.to_dict()
+	print(response)
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
