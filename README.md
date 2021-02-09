@@ -1,4 +1,4 @@
-# Chess.com Python API
+# pychesscom
 
 An asynchronous Python client for Chess.com's API
 <p>
