@@ -7,7 +7,7 @@ with open('README.md', 'r') as f1:
     long_description1 = f1.read()[:3]
 
 with open('README.md', 'r') as f2:
-    long_description2 = f1.read()[10:]
+    long_description2 = f2.read()[10:]
 
 long_description = ''.join(long_description1 + long_description2)
 
