@@ -3,9 +3,10 @@
 An asynchronous Python client for Chess.com's API
 <p>
   <img alt="License" src="https://img.shields.io/github/license/vopani/pychesscom?color=blue">
-  <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/pychesscom?color=brightgreen">
+  <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/pychesscom?color=orange">
   <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/pychesscom?label=pypi&color=green">
-  <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/pychesscom?color=orange">
+  <img src='https://readthedocs.org/projects/pychesscom/badge/?version=latest' alt='Documentation Status' />
+  <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/pychesscom?color=yellow">
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/vopani">
 </p>
 
