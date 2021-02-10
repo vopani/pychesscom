@@ -57,7 +57,7 @@ class Tournament:
 
             from pychesscom import ChessComClient
             client = ChessComClient()
-            response = await client.tournament.get_details('-33rd-chesscom-quick-knockouts-1401-1600')
+            response = await client.tournament.get_round('-33rd-chesscom-quick-knockouts-1401-1600', 1)
             print(response)
         """
         route = Route(f'tournament/{url_id}/{round_id}')
@@ -86,7 +86,7 @@ class Tournament:
 
             from pychesscom import ChessComClient
             client = ChessComClient()
-            response = await client.tournament.get_details('-33rd-chesscom-quick-knockouts-1401-1600')
+            response = await client.tournament.get_round_group('-33rd-chesscom-quick-knockouts-1401-1600', 1, 1)
             print(response)
         """
         route = Route(f'tournament/{url_id}/{round_id}/{group_id}')

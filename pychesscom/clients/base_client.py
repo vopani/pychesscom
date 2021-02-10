@@ -20,7 +20,7 @@ class BaseClient:
         """
         HTTP request for a route.
 
-        :param route:
+        :param route: The route for API request
         :type route: :class:`pychesscom.utils.route.Route`
         :return: Response of the API request
         """

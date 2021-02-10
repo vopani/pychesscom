@@ -1,4 +1,4 @@
-# pychesscom
+# PyChessCom
 
 An asynchronous Python client for Chess.com's API
 <p>
@@ -9,6 +9,14 @@ An asynchronous Python client for Chess.com's API
   <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/pychesscom?color=yellow">
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/vopani">
 </p>
+
+## Index
+
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Resources](#Resources)
+* [License](#License)
+* [Credits](#Credits)
 
 ## Installation
 **Python 3.7 or higher is required**
@@ -51,12 +59,13 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-## Documentation
-[https://pychesscom.readthedocs.io/](https://pychesscom.readthedocs.io/)
+## Resources
+* Documentation: [https://pychesscom.readthedocs.io/](https://pychesscom.readthedocs.io/)
+* Notebook: [https://www.kaggle.com/rohanrao/introducing-pychesscom](https://www.kaggle.com/rohanrao/introducing-pychesscom)
 
 ## License
 
-This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for more information.
+This project is licensed under the [Apache License 2.0](LICENSE)
 
 ## Credits
 Chess.com API: [https://www.chess.com/news/view/published-data-api](https://www.chess.com/news/view/published-data-api)   

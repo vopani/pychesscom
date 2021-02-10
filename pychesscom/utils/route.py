@@ -8,6 +8,6 @@ class Route:
     BASE = 'https://api.chess.com/pub'
     """Chess.com's base API URL"""
 
-    def __init__(self, path):
+    def __init__(self, path: str):
         self.path = path
         self.url = f'{self.BASE}/{self.path}'
