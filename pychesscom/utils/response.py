@@ -5,18 +5,13 @@ class Response:
     """
     Class for handling Chess.com API responses.
 
-    :param url: URL of Chess.com API request
-    :type url: str
-    :param code: Code of API response
-    :type code: int
-    :param reason: Reason of API response
-    :type reason: str
-    :param content_type: Content type of API response
-    :type content_type: str
-    :param timestamp: Timestamp of API request
-    :type timestamp: bytes
-    :param content: Content of API response
-    :type content: _SpecialForm[List[dict], dict]
+    Args:
+        url(str): URL of Chess.com API request
+        code(int): Code of API response
+        reason(str): Reason of API response
+        content_type(str): Content type of API response
+        timestamp(bytes): Timestamp of API request
+        content(_SpecialForm[List[dict], dict]): Content of API response
     """
     def __init__(self, url: str, code: int, reason: str, content_type: str, timestamp: bytes,
                  content: Union[List[dict], dict]):
@@ -31,8 +26,8 @@ class Response:
         """
         Convert to dictionary.
 
-        :return: Dictionary format
-        :rtype: dict
+        Returns:
+            dict: Dictionary format
         """
         _dict: dict = {}
         for key, val in vars(self).items():

@@ -10,7 +10,7 @@ Response
    :show-inheritance:
 
 Route
---------
+-----
 
 .. autoclass:: pychesscom.utils.route.Route
    :members:

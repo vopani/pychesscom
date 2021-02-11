@@ -1,3 +1,5 @@
+import datetime
+
 from pychesscom.clients.base_client import BaseClient
 from pychesscom.utils.response import Response
 from pychesscom.utils.route import Route
@@ -7,8 +9,8 @@ class Player:
     """
     Class for handling endpoints of player information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,10 +21,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -44,10 +47,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player-stats
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -69,10 +73,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player-is-online
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -94,10 +99,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player-clubs
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -119,10 +125,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player-matches
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -144,10 +151,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-player-tournaments
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -169,10 +177,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-games-current
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -194,10 +203,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-games-tomove
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -219,10 +229,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-games-archive-list
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -244,14 +255,13 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-games-archive
 
-        :param username: The username of a player on chess.com
-        :type username: str
-        :param year: Year of archive
-        :type year: int
-        :param month: Month of archive
-        :type month: int
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            username(str): The username of a player on chess.com
+            year(int): Year of archive
+            month(int): Month of archive
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -276,10 +286,11 @@ class Player:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-titled
 
-        :param title: The title abbreviation
-        :type title: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            title(str): The title abbreviation
+
+        Returns:
+            Response: Response of API request
 
         Example:
 

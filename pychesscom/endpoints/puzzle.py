@@ -7,8 +7,8 @@ class Puzzle:
     """
     Class for handling endpoints of puzzle information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,8 +19,8 @@ class Puzzle:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-daily-puzzle
 
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -42,8 +42,8 @@ class Puzzle:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-random-daily-puzzle
 
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Returns:
+            Response: Response of API request
 
         Example:
 

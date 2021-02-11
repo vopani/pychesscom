@@ -7,8 +7,8 @@ class Leaderboard:
     """
     Class for handling endpoints of leaderboard information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,8 +19,8 @@ class Leaderboard:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-leaderboards
 
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Returns:
+            Response: Response of API request
 
         Example:
 

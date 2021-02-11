@@ -7,8 +7,8 @@ class Club:
     """
     Class for handling endpoints of club information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,10 +19,11 @@ class Club:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-club-profile
 
-        :param url_id: The url_id of a club's web page on chess.com
-        :type url_id: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a club's web page on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -44,10 +45,11 @@ class Club:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-club-members
 
-        :param url_id: The url_id of a club's web page on chess.com
-        :type url_id: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a club's web page on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -69,10 +71,11 @@ class Club:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-club-matches
 
-        :param url_id: The url_id of a club's web page on chess.com
-        :type url_id: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a club's web page on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 

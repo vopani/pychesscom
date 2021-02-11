@@ -7,8 +7,8 @@ class Country:
     """
     Class for handling endpoints of country information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,10 +19,11 @@ class Country:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-country-profile
 
-        :param iso: 2-character ISO 3166 code of country
-        :type iso: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            iso(str): 2-character ISO 3166 code of country
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -46,10 +47,11 @@ class Country:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-country-players
 
-        :param iso: 2-character ISO 3166 code of country
-        :type iso: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            iso(str): 2-character ISO 3166 code of country
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -73,10 +75,11 @@ class Country:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-country-clubs
 
-        :param iso: 2-character ISO 3166 code of country
-        :type iso: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            iso(str): 2-character ISO 3166 code of country
+
+        Returns:
+            Response: Response of API request
 
         Example:
 

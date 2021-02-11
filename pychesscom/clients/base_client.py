@@ -10,8 +10,8 @@ class BaseClient:
     """
     Class for handling HTTP Client requests.
 
-    :param loop: Asyncio event loop
-    :type loop: :class:`asyncio.AbstractEventLoop`
+    Args:
+        loop(AbstractEventLoop): Asyncio event loop
     """
     def __init__(self, loop=None) -> None:
         self.loop = get_event_loop() if loop is None else loop
@@ -20,9 +20,11 @@ class BaseClient:
         """
         HTTP request for a route.
 
-        :param route: The route for API request
-        :type route: :class:`pychesscom.utils.route.Route`
-        :return: Response of the API request
+        Args:
+            route(Route): The route for API request
+
+        Returns:
+            Response: Response of API request
         """
         async with ClientSession(loop=self.loop) as session:
             async with session.get(url=route.url, **kwargs) as r:

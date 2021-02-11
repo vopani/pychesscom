@@ -61,7 +61,8 @@ loop.run_until_complete(main())
 
 ## Resources
 * Documentation: [https://pychesscom.readthedocs.io/](https://pychesscom.readthedocs.io/)
-* Notebook: [https://www.kaggle.com/rohanrao/introducing-pychesscom](https://www.kaggle.com/rohanrao/introducing-pychesscom)
+* Tutorial: [https://www.kaggle.com/rohanrao/introducing-pychesscom](https://www.kaggle.com/rohanrao/introducing-pychesscom)
+* WGM Chess Dataset: [https://www.kaggle.com/rohanrao/wgm-chess-games-dataset-preparation](https://www.kaggle.com/rohanrao/wgm-chess-games-dataset-preparation)
 
 ## License
 

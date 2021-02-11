@@ -7,8 +7,8 @@ class Tournament:
     """
     Class for handling endpoints of tournament information.
 
-    :param client: HTTP client for API requests
-    :type client: :class:`pychesscom.clients.base_client.BaseClient`
+    Args:
+        client(BaseClient): HTTP client for API requests
     """
     def __init__(self, client: BaseClient):
         self._client = client
@@ -19,10 +19,11 @@ class Tournament:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-tournament-profile
 
-        :param url_id: The url_id of a tournament's web page on chess.com
-        :type url_id: str
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a tournament's web page on chess.com
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -44,12 +45,12 @@ class Tournament:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-tournament-round
 
-        :param url_id: The url_id of a tournament's web page on chess.com
-        :type url_id: str
-        :param round_id: The round_id of a tournament
-        :type round_id: int
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a tournament's web page on chess.com
+            round_id(int): The round_id of a tournament
+
+        Returns:
+            Response: Response of API request
 
         Example:
 
@@ -71,14 +72,13 @@ class Tournament:
 
         Chess.com API: https://www.chess.com/news/view/published-data-api#pubapi-endpoint-tournament-round-group
 
-        :param url_id: The url_id of a tournament's web page on chess.com
-        :type url_id: str
-        :param round_id: The round_id of a tournament
-        :type round_id: int
-        :param group_id: The group_id of a tournament round
-        :type group_id: int
-        :return: Response of API request
-        :rtype: :class:`pychesscom.utils.response.Response`
+        Args:
+            url_id(str): The url_id of a tournament's web page on chess.com
+            round_id(int): The round_id of a tournament
+            group_id(int): The group_id of a tournament round
+
+        Returns:
+            Response: Response of API request
 
         Example:
 

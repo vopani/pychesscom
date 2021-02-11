@@ -13,8 +13,8 @@ class ChessComClient:
     """
     Class for handling Chess.com API requests.
 
-    :param loop: Asyncio event loop
-    :type loop: :class:`asyncio.AbstractEventLoop`
+    Args:
+        loop(AbstractEventLoop): Asyncio event loop
 
     Example:
 
